@@ -1,11 +1,12 @@
 package assignment9;
 
+import java.util.Scanner;
+
 import assignment9.scenes.Bubbles;
 import assignment9.scenes.Clear;
 import assignment9.scenes.Forest;
 import assignment9.scenes.Leaves;
 import edu.princeton.cs.introcs.StdDraw;
-import support.cse131.ArgsProcessor;
 
 public class SceneComposer {
 
@@ -13,7 +14,7 @@ public class SceneComposer {
 
 	public static void main(String[] args) {
 
-		ArgsProcessor ap = new ArgsProcessor(args);
+		Scanner in = new Scanner(System.in);
 		
 		// Note: Double Buffering is enabled!  
 		//       You'll need to call show() to update the screen.
@@ -37,7 +38,8 @@ public class SceneComposer {
 			b.draw();
 			StdDraw.show();
 			StdDraw.pause(10);
-			String resp = ap.nextString("Again?");
+			System.out.println("Again?");
+			String resp = in.nextLine();
 			if (resp.equals("no")) {
 				break;
 			}
