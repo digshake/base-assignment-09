@@ -1,11 +1,11 @@
-package assignment9.utils;
+package assignment9;
 
 import java.awt.Color;
 import java.util.Random;
 
 public class ColorUtils {
 	
-	private static Color solidColor() {
+	public static Color solidColor() {
 		Random r = new Random();
 		return new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256));
 	}
@@ -17,7 +17,7 @@ public class ColorUtils {
 		return new Color(r, g, b, 64);
 	}
 	
-	public static Color randomColor() {
+	public static Color transparentColor() {
 		return transparent(solidColor());
 	}
 }
