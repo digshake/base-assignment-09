@@ -17,6 +17,13 @@ public class Game {
 			int dir = getKeypress();
 			//Testing only: you will eventually need to do more work here
 			System.out.println("Keypress: " + dir);
+			
+			/*
+			 * 1. Pass direction to your snake
+			 * 2. Tell the snake to move
+			 * 3. If the food has been eaten, make a new one
+			 * 4. Update the drawing
+			 */
 		}
 	}
 	
@@ -39,6 +46,13 @@ public class Game {
 	 */
 	private void updateDrawing() {
 		//FIXME
+		
+		/*
+		 * 1. Clear screen
+		 * 2. Draw snake and food
+		 * 3. Pause (50 ms is good)
+		 * 4. Show
+		 */
 	}
 	
 	public static void main(String[] args) {
